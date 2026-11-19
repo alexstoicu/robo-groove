@@ -1,0 +1,28 @@
+# Build output (the published copy lives at the repo root)
+source/www/
+source/www-android/
+source/samples/raw/
+source/samples/vcsl/
+
+# Android
+android/node_modules/
+android/www/
+android/android/app/src/main/assets/public/
+android/android/.gradle/
+android/android/.kotlin/
+android/android/build/
+android/android/app/build/
+android/android/local.properties
+android/android/keystore.properties
+
+# Never commit signing keys
+*.jks
+*.keystore
+*.p12
+*.apk
+*.aab
+
+# Editors
+.vscode/
+*.code-workspace
+__pycache__/

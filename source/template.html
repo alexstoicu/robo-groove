@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#1b1640">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Robo Groove">
+<link rel="apple-touch-icon" href="icon.png">
+<!-- Offline + install support: manifest describes the app to phones -->
+<link rel="manifest" href="manifest.json">
+<meta name="description" content="Robo Groove: build songs with a cartoon band and make the robot dance on the beat. 14 music styles, real instruments and light shows. Free, no ads, no account, works offline. Made by Night Lab XP.">
+<title>Robo Groove</title>
+<style>
+/*STYLE*/
+</style>
+</head>
+<body>
+
+<!--STAGE-->
+
+<section id="palette">
+  <div id="tabbar">
+    <button class="tab sel" data-tab="robot">🤖 Robot</button>
+    <button class="tab" data-tab="drums">🧸 Drums</button>
+    <button class="tab" data-tab="bongos">🐢 Bongos</button>
+    <button class="tab" data-tab="keys">🧚 Keys</button>
+    <button class="tab" data-tab="guitar">🦄 Guitar</button>
+    <button class="tab" data-tab="winds">🦊 Winds</button>
+    <div id="subtabs">
+      <button class="sub head sel" data-sub="head">🙂 Head</button>
+      <button class="sub arm" data-sub="arm">💪 Arms</button>
+      <button class="sub leg" data-sub="leg">🦵 Legs</button>
+    </div>
+    <div id="skins"><button data-skin="A" class="sel">🤖 A</button><button data-skin="B">🎀 B</button></div>
+    <button id="genreBtn" class="hidden"></button>
+  </div>
+  <div class="blocks" id="blocks"></div>
+</section>
+
+<section id="timeline">
+  <div id="songbar">
+    <div id="mode"><button data-m="loop" class="sel">🔁 Loop part</button><button data-m="song">🎵 Song</button></div>
+    <div id="chips"></div>
+    <button id="addSec">➕ Section</button>
+  </div>
+  <div id="rulerRow">
+    <div id="rulerLab">📍</div>
+    <div id="ruler"><div id="rsegs"></div><div id="loopRange"></div><div id="cursor"></div><div id="rhead"></div></div>
+    <button id="loopPill">👆 tap = start here · drag = loop</button>
+  </div>
+  <div id="tlmain">
+    <div id="controls">
+      <button id="play">▶ Play</button>
+      <button id="clear">🧹 Clear</button>
+      <button id="saveBtn">💾 Save</button>
+    </div>
+    <div id="lanes">
+      <div></div><div id="nums"></div>
+      <div class="lab head">🙂</div>
+      <div id="trackwrap" style="grid-row:span 3">
+        <div class="lane" data-lane="head"></div>
+        <div class="lane" data-lane="arm"></div>
+        <div class="lane" data-lane="leg"></div>
+        <div id="playhead"></div>
+      </div>
+      <div class="lab arm">💪</div>
+      <div class="lab leg">🦵</div>
+      <div class="lab fxl">🎛️</div>
+      <div class="lane" id="fxrow"></div>
+    </div>
+  </div>
+</section>
+
+<div id="ghost"></div>
+<div id="popbg" class="hidden"></div>
+<div id="pop" class="hidden"></div>
+
+<div id="start" class="overlay">
+  <!--STARTSIGN-->
+  <p>Pick a beat, add dance moves, and build a song!</p>
+  <button id="startBtn">▶ Tap to Start</button>
+</div>
+<div id="busy" class="overlay hidden"><h1 id="busyIc">🎙️</h1><p id="busyTxt"></p><div id="bar"><div id="barFill"></div></div><div id="busyBtns"></div></div>
+<div id="rotate" class="overlay"><h1>🔄</h1><p>Turn your tablet sideways</p></div>
+
+<!--SAMPLEDATA-->
+<script>/*CAPCORE*/</script>
+<script>/*LAME*/</script>
+<script>
+/*SCRIPT*/
+</script>
+<!-- Offline support: switch on the service worker (sw.js) if the browser has them -->
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+</script>
+</body>
+</html>

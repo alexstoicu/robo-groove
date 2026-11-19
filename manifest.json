@@ -1,7 +1,7 @@
 {
   "name": "Robo Groove",
   "short_name": "Robo Groove",
-  "description": "A free loop machine for kids: press a button, change the loop, overdub, save. No ads, no account, works offline.",
+  "description": "Build songs with a cartoon band and make the robot dance on the beat. Free, no ads, no account, works offline.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

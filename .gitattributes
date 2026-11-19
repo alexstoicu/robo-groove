@@ -1,0 +1,6 @@
+# Keep Unix line endings everywhere so the built app is byte-identical on every machine
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.jar binary
+*.woff2 binary
