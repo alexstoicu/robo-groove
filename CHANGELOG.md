@@ -2,6 +2,16 @@
 
 Versions follow `MAJOR.MINOR.PATCH`. A fix is a patch (1.1.0 → 1.1.1); new features are a minor version.
 
+## [1.1.1]: 2026-11-21, itch.io build in the repo
+
+- **itch.io:** the build live at https://doodledance.itch.io/robo-groove (Doodle Dance) is now kept in `itch/`:
+  `index.html`, `icon.png`, `LICENSE.txt` and `CREDITS.txt`. The itch.io zip is built from this folder.
+- **License:** `LICENSE.txt` placeholder replaced: all rights reserved, public for viewing and learning, playing and
+  personal installs welcome.
+- **Web (GitHub Pages) is unchanged.** The `itch/` build has no offline or install support; the site root keeps it.
+
+**Known issue:** on small screens such as phones, the layout doesn't scale properly. A fix is planned for 1.1.2.
+
 ## [1.1.0]: 2026-11-18, first tagged release
 
 The app is the same as the version that has been live since 25 Oct 2026. This release makes the repository the master copy.

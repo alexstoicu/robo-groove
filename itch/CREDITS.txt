@@ -1,0 +1,68 @@
+ROBO GROOVE v1.1 - CREDITS AND THIRD-PARTY LICENSES
+====================================================
+
+Robo Groove by Alex Stoicu.
+Original code, characters, artwork and music data were made for this project.
+
+The game ships as one HTML file (index.html). The third-party parts below are
+embedded in it.
+
+
+CODE LIBRARIES
+--------------
+
+lamejs 1.2.1 (MP3 encoder, used by the "Save as MP3" feature)
+  License: GNU Lesser General Public License v3.0 (LGPL-3.0)
+  Source:  https://github.com/zhuker/lamejs
+           https://www.npmjs.com/package/lamejs (version 1.2.1)
+  Based on LAME (https://lame.sourceforge.io/), also LGPL.
+
+  LGPL NOTICE: lamejs is free software; you can redistribute it and/or modify
+  it under the terms of the GNU Lesser General Public License as published by
+  the Free Software Foundation, version 3. It is distributed WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE. See the GNU LGPL for details:
+  https://www.gnu.org/licenses/lgpl-3.0.html
+  Robo Groove includes the unmodified minified lamejs build (lame.min.js) in
+  its own separate <script> block in index.html, so you can swap in your own
+  or a modified build of lamejs. The full source code is at the links above.
+
+Capacitor Core 8.5.3 (Ionic)
+  License: MIT
+  Source:  https://github.com/ionic-team/capacitor
+  Used as the Android bridge. In a web browser it does nothing.
+
+
+FONTS
+-----
+
+Fredoka (Bold 700)
+  Copyright 2016 The Fredoka Project Authors.
+  License: SIL Open Font License 1.1 (https://openfontlicense.org)
+  Source:  https://fonts.google.com/specimen/Fredoka
+
+Figtree (400, 600, 800)
+  Copyright 2022 The Figtree Project Authors (https://github.com/erikdkennedy/figtree).
+  License: SIL Open Font License 1.1 (https://openfontlicense.org)
+  Source:  https://fonts.google.com/specimen/Figtree
+
+
+INSTRUMENT SAMPLES
+------------------
+
+Versilian Community Sample Library (VCSL), Versilian Studios
+  License: CC0 1.0 (public domain dedication)
+  Source:  https://github.com/sgossner/VCSL
+  Used for: piano, electric piano, vibes, marimba, glockenspiel, harp,
+  harmonica, tenor sax, acoustic drums and percussion, bongos.
+
+FluidR3 GM SoundFont by Frank Wen
+  License: MIT (original FluidR3 GM release). The converted copy used, from
+  gleitz/midi-js-soundfonts, is labeled "Creative Commons Attribution 3.0"
+  in that project's README (https://creativecommons.org/licenses/by/3.0/us/).
+  This credit is the attribution both licenses ask for.
+  Source:  https://github.com/gleitz/midi-js-soundfonts
+  Used for: guitars, banjo, basses, winds, brass, strings, choir, organ,
+  accordion, steel drums and other melodic instruments.
+
+Samples were trimmed, normalized and re-encoded to MP3 for the game.
