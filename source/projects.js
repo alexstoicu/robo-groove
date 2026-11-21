@@ -120,7 +120,7 @@ $("#muteBtn").addEventListener("pointerup", () => { muted = !muted; try{ localSt
 
 /* ---------- credits ---------- */
 $("#creditsBtn") && $("#creditsBtn").addEventListener("pointerup", () => openPop($("#creditsBtn"), `<h4>🎼 Credits</h4><div class="credits">
-  <p><b>Robo Groove</b> by NerdHomies.</p>
+  <p><b>Robo Groove</b> by Alex Stoicu.</p>
   <p>Instrument recordings: <b>Versilian Community Sample Library (VCSL)</b> by Versilian Studios — CC0 public domain.</p>
   <p>More instruments: <b>FluidR3 GM</b> SoundFont by Frank Wen — MIT License (via midi-js-soundfonts).</p>
   <p>MP3 saving: <b>lamejs</b> — LGPL. Fonts: <b>Fredoka</b> &amp; <b>Figtree</b> — SIL Open Font License.</p></div>`, () => {}));

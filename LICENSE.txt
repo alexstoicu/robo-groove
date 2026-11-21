@@ -1,0 +1,8 @@
+Robo Groove
+Copyright 2026 Alex Stoicu, all rights reserved.
+
+[PLACEHOLDER: the final license has not been chosen yet. Replace this file before release.]
+
+This license covers Robo Groove's original code, characters, artwork, music data
+and text. Third-party components bundled in the game keep their own licenses;
+see CREDITS.txt.
