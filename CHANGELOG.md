@@ -2,6 +2,20 @@
 
 Versions follow `MAJOR.MINOR.PATCH`. A fix is a patch (1.1.0 → 1.1.1); new features are a minor version.
 
+## [1.2.0]: 2026-11-22, free edition (save and export removed)
+
+- **Free edition split out.** The itch.io build no longer has in-app Save, My Songs, `.robogroove`
+  save/open, or MP3/WAV export. That code (`export.js`, the save half of `projects.js`, the `lamejs` MP3
+  encoder) is left out of the build entirely, not gated at runtime. It moves to the forthcoming premium
+  edition (see `PREMIUM-PLAN.md`).
+- **Kept in the free edition:** all 14 styles and real-instrument samples, the Lights menu, Mute, Credits,
+  and session auto-remember of the current in-progress song.
+- **Build:** `build.py --edition=free` produces the free web build (`source/www-free/`). The itch.io zip is
+  assembled from `itch-free/` (`index.html`, `icon.png`, `LICENSE.txt`, `CREDITS.txt`) and published from the
+  Publishing folder.
+
+**Known issue:** small-screen scaling (carried over from 1.1.x) is still to be addressed.
+
 ## [1.1.1]: 2026-11-21, itch.io build in the repo
 
 - **itch.io:** the build live at https://doodledance.itch.io/robo-groove (Doodle Dance) is now kept in `itch/`:
